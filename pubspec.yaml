@@ -1,8 +1,7 @@
 name: open_app
 description: A new flutter plugin project.
 version: 0.0.1
-author:
-homepage:
+homepage: https://github.com/wlgliu/open_app
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -26,8 +25,10 @@ flutter:
   # be modified. They are used by the tooling to maintain consistency when
   # adding or updating assets for this project.
   plugin:
-    androidPackage: com.example.open_app
-    pluginClass: OpenAppPlugin
+    platforms:
+      android:
+        androidPackage: com.example.open_app
+        pluginClass: OpenAppPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
