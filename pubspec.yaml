@@ -20,14 +20,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-  # This section identifies this Flutter project as a plugin project.
-  # The androidPackage and pluginClass identifiers should not ordinarily
-  # be modified. They are used by the tooling to maintain consistency when
-  # adding or updating assets for this project.
   plugin:
     platforms:
       android:
-        androidPackage: com.example.open_app
+        package: com.example.open_app
         pluginClass: OpenAppPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
