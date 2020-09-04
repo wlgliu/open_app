@@ -22,6 +22,11 @@ public class OpenAppPlugin implements FlutterPlugin, MethodCallHandler {
     channel.setMethodCallHandler(this);
   }
 
+  public static void registerWith(Registrar registrar) {
+    final MethodChannel channel = new MethodChannel(registrar.messenger(), "open_app");
+    channel.setMethodCallHandler(new OpenAppPlugin());
+  }
+
 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
